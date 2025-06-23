@@ -7,15 +7,32 @@
 		{
 			"Name": "R1",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"CoreUObject",
+				"Engine"
+			]
+		},
+		{
+			"Name": "R1Editor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"CoreUObject",
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
+			"Enabled": true
+		},
+		{
+			"Name": "VisualStudioTools",
 			"Enabled": true,
-			"TargetAllowList": [
-				"Editor"
+			"SupportedTargetPlatforms": [
+				"Win64"
 			]
 		}
 	]

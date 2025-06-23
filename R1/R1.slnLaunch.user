@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "새 프로필",
+    "Projects": [
+      {
+        "Path": "Intermediate\\ProjectFiles\\UE5.vcxproj",
+        "Action": "Start",
+        "DebugTarget": "로컬 Windows 디버거"
+      },
+      {
+        "Path": "..\\..\\..\\..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Programs\\UnrealBuildTool\\UnrealBuildTool.csproj",
+        "Action": "Start",
+        "DebugTarget": "UnrealBuildTool"
+      }
+    ]
+  }
+]
