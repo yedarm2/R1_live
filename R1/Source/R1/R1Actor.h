@@ -6,6 +6,9 @@
 #include "GameFramework/Actor.h"
 #include "R1Actor.generated.h"
 
+class UR1Object;
+class UStaticMeshComponent;
+
 UCLASS()
 class R1_API AR1Actor : public AActor
 {
@@ -23,14 +26,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-	UPROPERTY(EditAnywhere)
-	int32 Hp = 100;
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	TObjectPtr<UStaticMeshComponent> Box;
 
-	UPROPERTY(VisibleAnywhere)
-	int32 Mp = 50;
-
-	UPROPERTY(VisibleAnywhere)
-	float Speed = 3.5f;
-
+	UPROPERTY(EditAnywhere, Category=Battle)
+	TObjectPtr<class AActor> Target;
 };
